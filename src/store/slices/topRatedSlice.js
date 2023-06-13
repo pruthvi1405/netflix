@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const popularSlice = createSlice({
+export const topRatedSlice = createSlice({
   name: "popular",
   initialState: [],
   reducers: {
-    popular: (state, action) => {
+    topRated: (state, action) => {
       return state=action.payload
     }
   }
 });
 
-export const {popular} = popularSlice.actions;
+export const {topRated} = topRatedSlice.actions;
