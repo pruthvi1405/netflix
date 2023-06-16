@@ -12,12 +12,15 @@ function Banner() {
 
     const fetchMovie=async()=>{
         const m=await instance.get(requests.fetchNetflixOriginals)
-        console.log(m.data.results[1])
-        setMovie(m.data.results[1])
+        console.log(m.data.results)
+        setMovie(m.data.results[Math.round(Math.random() * 10)])
     }
     const truncate=(string,n)=>{
         if (string?.length>n){
             return string.slice(0,n-1)+"..."
+        }
+        else{
+            return string
         }
     }
   return (
