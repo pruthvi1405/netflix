@@ -17,12 +17,15 @@
     width: 150px;
     padding-left:20px;
     object-fit: contain;
+    margin-top: 10px;
 }
 .login{
     position: relative;
     height: 100%;
     background: url("https://external-preview.redd.it/B6MrrY-dyD1lnvvrb2BCISx1xQwGx-e7pjm-qeXwAkE.jpg?auto=webp&s=ade83a5a759042ffed5324e5172c9a59a27aaaa9" )center no-repeat;
     background-size: cover;
+    right: 0;
+    left: 0;
 }
 .gradient{
     height: 100vh;
@@ -43,8 +46,10 @@
     position:absolute;
     top: 30%;
     text-align: center;
-    margin-left: 15%;
+    margin-left: auto;
     margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .login_body h1{
