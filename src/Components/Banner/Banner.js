@@ -12,7 +12,6 @@ function Banner() {
 
     const fetchMovie=async()=>{
         const m=await instance.get(requests.fetchNetflixOriginals)
-        console.log(m.data.results)
         setMovie(m.data.results[Math.round(Math.random() * 10)])
     }
     const truncate=(string,n)=>{
@@ -24,7 +23,7 @@ function Banner() {
         }
     }
   return (
-    <div className="banner" style={{backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,}}>
+    <div className="banner" style={{backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`}}>
         <div className='banner_contents'>
             <h1 className='title'>{movie?.name||movie?.original_name}</h1>
             <button className='button'>

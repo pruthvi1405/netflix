@@ -1,0 +1,15 @@
+.poster{
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    transition: transform 450ms;
+}
+
+.poster:hover{
+    transform: scale(1.08);
+    opacity:1;
+}
+
+.large{
+    max-height: 200px;
+}
