@@ -16,6 +16,7 @@ function SignUp() {
       passwordRef.current.value
     ).then((authUser)=>{
       console.log(authUser)
+      navigate("/")
   }).catch((err)=>{
     alert(err.message)
   })

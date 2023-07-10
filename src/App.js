@@ -22,12 +22,12 @@ function App() {
         console.log(userAuth);
       }
       else{
-        dispatch(logout);
+        dispatch(logout());
       }
     })
   
     return unsubscribe;
-  }, [])
+  }, [dispatch])
   
   return (
     <div className='app' >
@@ -37,6 +37,7 @@ function App() {
       <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/profile" element={<Profile/>}/>
+      <Route path="/login" element={<Login/>}/>
       </Routes>)
       }
     </div>
